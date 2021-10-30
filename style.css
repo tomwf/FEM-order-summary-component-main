@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}	
+
+body {
+	font-size: 16px;
+	font-family: 'Red Hat Display', sans-serif;
+	background-color: var(--pale-blue);
+	color: var(--desaturated-blue);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+pre {
+	width: 80ch;	
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.wrapper {
+	height: 100%;
+	display: flex;
+	
+}
+
+.order {
+	margin: auto;
+	width: 400px;
+	overflow: hidden;
+	text-align: center;
+	background-color: white;
+	border-radius: 16px;
+	height: 600px;
+}
+
+.order__bg-img {
+	height: 200px;
+}
+
+.order__bg-img > img {
+	object-fit: cover;
+	height: 100%;
+}
+
+.order__wrapper {
+	padding: 2em;
+	height: calc(100% - 200px);
+}
+
+.order__wrapper-content {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+}
+
+.title {
+	color: var(--dark-blue);
+	font-weight: 900;
+}
+
+.order__payment-plan {
+	background-color: var(--very-pale-blue);	
+	border-radius: 8px;
+	display: flex;
+	padding: 1em;
+	align-items: center;
+}
+
+.order__payment-plan > div {
+	display: flex;
+	flex-direction: column;
+	margin-left: 1.5em;
+}
+
+.order__payment-plan > a {
+	margin-left: auto;
+	text-decoration: underline;
+	color: var(--bright-blue);
+}
+
+.order__payment-plan > a:hover {
+	text-decoration: none;
+	filter: brightness(2);
+}
+
+.order__payment-btn {
+	cursor: pointer;
+	background-color: var(--bright-blue);
+	border: none;
+	color: white;
+	padding: 1em 2em;
+	border-radius: 8px;
+	font-weight: 700;
+	width: 100%;
+	filter: drop-shadow(0 20px 12px var(--pale-blue));
+}
+
+.order__payment-btn:hover {
+	filter: brightness(2) drop-shadow(0 20px 12px var(--pale-blue));
+}
+
+.order__cancel-btn {
+	font-weight: 700;
+}
+
+.order__cancel-btn:hover {
+	filter: brightness(0.5);
+}
