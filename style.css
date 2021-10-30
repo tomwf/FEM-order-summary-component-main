@@ -25,10 +25,6 @@ body {
 	min-height: 100vh;
 }
 
-pre {
-	width: 80ch;	
-}
-
 a {
 	text-decoration: none;
 	color: inherit;
@@ -42,21 +38,22 @@ a {
 
 .order {
 	margin: auto;
-	width: 400px;
+	width: 360px;
+	height: 620px;
 	overflow: hidden;
 	text-align: center;
 	background-color: white;
 	border-radius: 16px;
-	height: 600px;
 }
 
 .order__bg-img {
-	height: 200px;
+	height: 180px;
+	overflow: hidden;
 }
 
 .order__bg-img > img {
 	object-fit: cover;
-	height: 100%;
+	width: 100%;
 }
 
 .order__wrapper {
@@ -68,6 +65,10 @@ a {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5em;
+}
+
+.order__wrapper-content p {
+	line-height: 1.8;
 }
 
 .title {
@@ -93,6 +94,7 @@ a {
 	margin-left: auto;
 	text-decoration: underline;
 	color: var(--bright-blue);
+	font-weight: 700;
 }
 
 .order__payment-plan > a:hover {
@@ -105,9 +107,10 @@ a {
 	background-color: var(--bright-blue);
 	border: none;
 	color: white;
-	padding: 1em 2em;
+	padding: 1em;
 	border-radius: 8px;
 	font-weight: 700;
+	font-size: inherit;
 	width: 100%;
 	filter: drop-shadow(0 20px 12px var(--pale-blue));
 }
