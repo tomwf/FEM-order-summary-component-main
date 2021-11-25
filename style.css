@@ -48,16 +48,15 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  width: 120%;
-  overflow: hidden;
   line-height: 0;
   transform: translate(0%, 50%);
+  overflow: hidden;
 }
 
 .curve svg {
   position: relative;
   display: block;
-  width: calc(120% + 1.3px);
+  width: calc(150% + 1.3px);
   height: 320px;
 }
 
